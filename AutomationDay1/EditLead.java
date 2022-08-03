@@ -13,6 +13,7 @@ public class EditLead {
 		//Invoking Browser logging in to leaftaps and editing leads form.
 		WebDriverManager.edgedriver().setup();
 		EdgeDriver driver=new EdgeDriver();
+		driver.manage().window().maximize();
 		driver.get("http://leaftaps.com/opentaps/control/login");
 		
 		//Logging in with credentials 
